@@ -15,40 +15,30 @@ This project fine-tunes a pretrained YOLOv8s model to localise and classify thre
 
 | Split | Images | Boxes |
 |-------|--------|-------|
-| Train | XX     | XX    |
-| Val   | XX     | XX    |
-| Test  | XX     | XX    |
+| Train | 205    | 2804  |
+| Val   | 87     | 1137  |
+| Test  | 72     | 945   |
 
 ## Method
 
-| Setting        | Value               |
-|----------------|---------------------|
-| Model          | YOLOv8s (pretrained)|
-| Epochs         | 20                  |
-| Image size     | 640                 |
-| Batch size     | 16                  |
-| Seed           | 42                  |
-| Hardware       | Google Colab T4 GPU |
-| Training time  | XX minutes          |
+| Metric        | Value |
+|---------------|-------|
+| Precision     | 0.871 |
+| Recall        | 0.855 |
+| mAP@50        | 0.922 |
+| mAP@50-95     | 0.647 |
+
+| Class     | AP@50 |
+|-----------|-------|
+| RBC       | 0.882 |
+| WBC       | 0.993 |
+| Platelets | 0.892 |
 
 ## Results
 
 Evaluated on the validation split using the best checkpoint.
 
-| Metric        | Value |
-|---------------|-------|
-| Precision     | XX.XX |
-| Recall        | XX.XX |
-| mAP@50        | XX.XX |
-| mAP@50-95     | XX.XX |
-
 Per-class AP@50:
-
-| Class     | AP@50 |
-|-----------|-------|
-| RBC       | XX.XX |
-| WBC       | XX.XX |
-| Platelets | XX.XX |
 
 ### Confusion matrix
 
