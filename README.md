@@ -59,7 +59,7 @@ The normalized confusion matrix (validation split, confidence threshold 0.25) sh
 
 The gap between mAP@50 (0.922) and mAP@50-95 (0.647) indicates that most cells are found but box localisation is less precise at stricter IoU thresholds. This is most pronounced for platelets (mAP@50-95 of 0.451 at a confidence threshold of 0.25), which are small enough that a few pixels of box error lowers IoU substantially.
 
-Limitations: the dataset is small (364 images), the validation split contains only 87 images, class counts are heavily imbalanced, and results come from a single run with one seed, so the numbers should be read as indicative rather than definitive..
+Limitations: the dataset is small (364 images), the validation split contains only 87 images, class counts are heavily imbalanced, and results come from a single run with one seed, so the numbers should be read as indicative rather than definitive.
 
 ## Reproducing the results
 
